@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context=".PartnerForm">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center"
+                    android:text="Become a Mentee"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your first name"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your last name"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your email"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your contact number"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/idnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your ID or passport Number"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="Enter occupation like student, teacher etc"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/town"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter your nearest town/village"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/benefited"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="previously benefitted from the iMentorU Foundation programs?"
+                        android:inputType="text"
+                        android:textSize="13sp"
+                        android:padding="10dp" />
+                    <EditText
+                        android:id="@+id/position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:hint="enter the position you are applying"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/province"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/found"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/language"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/input_field"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Please kindly tell us about who you are.
+Your background, educational and career
+ achievement or engagements/enrollments,
+ your interests, hobbies, believes and
+activities involved in"
+                        android:inputType="textMultiLine"
+                        android:minLines="10" />
+
+
+                    <LinearLayout
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/gradient"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
